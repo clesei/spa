@@ -193,7 +193,7 @@
   @media (max-width: 991.98px) {}
   /* Devices under 768px (md) */
   
-  @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
       p {
           font-size: 1rem!important;
       }
@@ -205,7 +205,7 @@
       .header {
           font-size: 1.5rem!important;
           /* width: 70%; */
-          padding: 0.5rem;
+          padding: 0 0.5rem;
           font-weight: 400!important;
       }
       h2 {
@@ -219,11 +219,21 @@
           top: -0.2em;
       }
       .banner {
-          height: 300px;
+          height: 200px;
+          background-position-x: 65%!important;
+      }
+      .carousel-caption {
+          bottom: 0.3rem!important;
+          padding-top: 0rem!important;
+          padding-bottom: 0!important;
       }
       .blockquote {
           padding: 0!important;
           padding-top: 3rem!important;
+      }
+      .header-quote {
+          font-size: 1rem!important;
+          font-weight: 300;
       }
   }
   
