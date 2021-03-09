@@ -115,7 +115,10 @@
   .jumbotron {
       margin-top: 3rem!important;
       margin: 0 auto;
+      background: rgb(236, 236, 236);
+      padding: 0.5rem 1.5rem!important;
   }
+  
   
   .navbar {
       background-color: white!important;
