@@ -27,7 +27,8 @@
   
   .banner {
       background-color: white!important;
-       background-repeat: no-repeat!important;
+      background-image: url('../img/King-KarlQuestion4.jpg')!important;
+      background-repeat: no-repeat!important;
       background-attachment: scroll!important;
       background-position: center!important;
       z-index: auto;
@@ -97,7 +98,7 @@
   .btn-custom {
       display: inline-block;
       padding: 0.5rem 1.5rem;
-      background-color: white!important;
+      background-color: rgba(255, 255, 255, 0.0)!important;
       color: #1b1b1b!important;
       font-weight: 400;
       border: 1px solid #e5c500!important;
@@ -114,10 +115,9 @@
   .jumbotron {
       margin-top: 3rem!important;
       margin: 0 auto;
-      background: rgb(236, 236, 236);
+      background: rgba(255, 255, 255, 0.8);
       padding: 0.5rem 1.5rem!important;
   }
-  
   
   .navbar {
       background-color: white!important;
@@ -146,7 +146,6 @@
       color: white!important;
       background-color: #7768AE;
   }
-  /* Horizontal RUle */
   
   .logo {
       position: absolute;
@@ -167,10 +166,14 @@
       border: 1px solid #ddd;
       margin: 3rem 0;
   }
-  /*=== FOOTER ===*/
   
   .disclaimer {
       background-color: #fff;
+  }
+  
+  input,
+  textarea {
+      border-radius: 0!important;
   }
   
   .socket a,
@@ -178,21 +181,17 @@
       color: white;
       font-size: 0.8rem;
   }
-  /*=== SOCKET ===*/
   
   .socket {
       background-color: #1b1b1b;
       text-align: center;
   }
-  /* Devices under 1199px (xl) */
   
   @media (max-width: 1199.98px) {}
-  /* Devices under 992px (xl) */
   
   @media (max-width: 991.98px) {}
-  /* Devices under 768px (md) */
   
-@media (max-width: 767.98px) {
+  @media (max-width: 767.98px) {
       p {
           font-size: 1rem!important;
       }
