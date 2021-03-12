@@ -26,7 +26,7 @@
         background-image: url("img/Dom.jpg")!important;
         background-size: cover;
         background-position: left top!important;
-        width: 100%;
+        max-width: 100%!important;
         opacity: 0.4;
         position: absolute;
         left: 0;
@@ -54,6 +54,12 @@
         } */
         .kontakt strong {
             font-size: 1rem;
+        }
+        .background {
+            position: absolute;
+            max-width: 100%!important;
+            opacity: 0.4;
+            background-position: center!important;
         }
     }
 </style>
@@ -94,7 +100,7 @@
 
                 <h1>Kontakt</h1>
 
-                <p class="lead">Bei Interesse an unserer Gruppe kannst du uns gerne kontaktieren und das Weitere mit uns vereinbaren.</p>
+                <p class="lead">Bei Interesse kannst du uns gerne kontaktieren. Schicke uns dazu deine Anfrage per Email an:</p>
 
 
                 <form id="contact-form" method="post" action="kontakt.php" role="form">
@@ -102,7 +108,6 @@
                     <div class="messages"></div>
 
                     <div class="controls">
-
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <div class="form-group">
@@ -110,16 +115,12 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-
-
-
                             <div class="col-md-6 mb-3">
                                 <div class="form-group">
                                     <input id="form_email" type="email" name="email" class="form-control" placeholder="Deine Email" required="required" data-error="Eingabefehler, bitte Email prüfen.">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="row">
                             <div class="col-md-12 mb-3">
@@ -133,10 +134,7 @@
                             </div>
                         </div>
                     </div>
-
                 </form>
-
-
             </div>
         </div>
     </div>
