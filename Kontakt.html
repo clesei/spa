@@ -18,7 +18,7 @@
     }
     
     .kontakt strong {
-        font-size:1.5rem;
+        font-size: 1.5rem;
         color: #7768AE;
     }
     
@@ -43,19 +43,19 @@
     }
     
     .jumbotron {
-        transform: translateY(100%)!important;
+        /* transform: translateY(25%)!important; */
         z-index: 1000;
         position: relative;
     }
     
-     @media (max-width: 767.98px) {
-        .jumbotron {
-            transform: translateY(50%)!important;
+    @media (max-width: 767.98px) {
+        /* .jumbotron {
+            transform: translateY(25%)!important;
+        } */
+        .kontakt strong {
+            font-size: 1rem;
         }
-           .kontakt strong {
-        font-size:1rem;
-         }}
-    
+    }
 </style>
 
 <body>
@@ -86,26 +86,26 @@
 
 
     <div class="background"></div>
-<div class="container">
-    <div class="row">
 
-            <div class="">
+
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron col-lg-8 kontakt p-4 mx-lg-auto text-center">
 
                 <h1>Kontakt</h1>
 
                 <p class="lead">Bei Interesse an unserer Gruppe kannst du uns gerne kontaktieren und das Weitere mit uns vereinbaren. Schicke uns dazu einfach deine Anfrage per Email an:</p>
 
 
-                <form id="contact-form" method="post" action="contact.php" role="form">
+                <form id="contact-form" method="post" action="kontakt.php" role="form">
 
                     <div class="messages"></div>
 
                     <div class="controls">
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 mb-3">
                                 <div class="form-group">
-                                    <label for="form_name">Name</label>
                                     <input id="form_name" type="text" name="name" class="form-control" placeholder="Dein Name" required="required" data-error="Firstname is required.">
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -113,9 +113,8 @@
 
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 mb-3">
                                 <div class="form-group">
-                                    <label for="form_email">Email</label>
                                     <input id="form_email" type="email" name="email" class="form-control" placeholder="Deine Email" required="required" data-error="Eingabefehler, bitte Email prüfen.">
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -123,15 +122,14 @@
 
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 mb-3">
                                 <div class="form-group">
-                                    <label for="form_message">Nachricht</label>
                                     <textarea id="form_message" name="message" class="form-control" placeholder="Schreib uns kurz dein Anliegen" rows="4" required="required" data-error="Bitte, hinterlass uns eine Nachricht"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <input type="submit" class="btn btn-success btn-send" value="Nachricht absenden">
+                            <div class="col-md-12 mb-3">
+                                <input type="submit" class="btn-custom" value="Nachricht absenden">
                             </div>
                         </div>
 
@@ -140,24 +138,14 @@
 
                 </form>
 
-            </div>
-        
-         </div>
-    <!-- 
-    
-    <div class="container">
-        <div class="row">
-            <div class="jumbotron col-lg-8 kontakt p-4 mx-lg-auto text-center">
-                <p> Bei Interesse an unserer Gruppe kannst du uns gerne kontaktieren und das Weitere mit uns vereinbaren. Schicke uns dazu einfach deine Anfrage per Email an:</p>
-                <strong>info@sozialephobie-aachen.de</strong>
+
             </div>
         </div>
     </div>
 
-    -->
-    
-    
-    
+
+
+
     <div class="socket p-2">
         <a href="Impressum.html">Impressum & Datenschutz</a>
         <p><span style="font-size: 0.8rem;">2021 &copy; </span><a href="Kontakt.html">Soziale Phobie Aachen</a></p>
@@ -171,7 +159,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
     <script src="kontakt.js"></script>
-    
+
 
     <!-- End Script Source Files -->
 </body>
